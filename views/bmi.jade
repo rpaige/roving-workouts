@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	div(class='BMI')
+		h1 Quick BMI calculation
+		
+		br
+		div(class='spacer')
+		
+		form(id="BMI calculation")
+				label Your weight in pounds 
+				input(id ='weight' type='text' name='Weight')
+				label  Your height in inches 
+				input(id ='height' type='text' name='height')
+				br
+				input(id='Calculate' type='submit' value="What's my BMI?")                                                
+		span(id='bmiResult')

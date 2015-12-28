@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    title Roving Fitness
+    link(rel='stylesheet', href='/stylesheets/bootstrap/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap/css/bootstrap-theme.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Frijole', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css')
+  include ./partials/_nav.jade
+  body
+    div(class='container')
+        div(class='row')
+            div(class='col-md-4')
+            a(href='./')
+                div(id='wholeLogo')
+                    h1(id='R', class='logo', class='Roving', class='logoCap', class='col-md-1') R
+                    h1(id='oving', class='logo', class='Roving', class='logoLow', class='col-md-1') oving
+                    h1(id='F', class='logo', class='fitness', class='logoCap', class='col-md-1') F
+                    h1(id='itness', class='logo', class='fitness', class='logoLow', class='col-md-1') itness 
+            div(class='col-md-4') 
+        div(class='row')
+            p(id='logoTagline', class='col-md-12') Fitness on the go! &reg
+    block content
+    script(src='/static/javascripts/jquery.js')
+    script(src='/static/javascripts/jquery.fittext.js')
+    script(src='/static/javascripts/jquery.easing.min.js')
+    script(src='/static/javascripts/myJs.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+    include ./partials/_footer.jade
