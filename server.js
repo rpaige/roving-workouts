@@ -67,8 +67,11 @@ passport.use(new LocalStrategy(Account.authenticate()));
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
-//mongoose
-mongoose.connect('mongodb://localhost/rfdb');
+//mongoose.connect('mongodb://localhost/rfdb');
+
+mongoose.connect('mongodb://heroku_drrc7lnw:ppo6rlddmjml5m0s3k0icarbfl@ds037215.mongolab.com:37215/heroku_drrc7lnw');
+//mongoose.connect('mongodb://heroku_drrc7lnw:ppo6rlddmjml5m0s3k0icarbfl@ds037215.mongolab.com:37215/heroku_drrc7lnw');
+//heroku_drrc7lnw:ppo6rlddmjml5m0s3k0icarbfl@ds037215.mongolab.com:37215/heroku_drrc7lnw
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
